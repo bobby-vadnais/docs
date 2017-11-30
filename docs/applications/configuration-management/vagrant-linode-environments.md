@@ -100,7 +100,7 @@ Vagrant.configure('2') do |config|
   config.vm.provider :linode do |provider, override|
     override.vm.box = 'linode'
     override.vm.box_url = "https://github.com/displague/vagrant-linode/raw/master/box/linode.box"
-    provider.token = 'API-KEY'
+    provider.api_key = 'API-KEY'
   end
 
 end
